@@ -1,0 +1,32 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-config-standard"
+  ],
+  "jsRules": {
+    "space-before-function-paren": {
+      "severity": "error",
+      "options": {
+        "anonymous": "always",
+        "named": "never"
+      }
+    },
+    "semicolon": {
+      "severity": "error",
+      "options": "always"
+    },
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+    "ter-indent": {
+      "severity": "error",
+      "options": [
+        2,
+        {
+          "MemberExpression": "off",
+          "SwitchCase": 1
+        }
+      ]
+    }
+  },
+  "rules": {},
+  "rulesDirectory": []
+}
